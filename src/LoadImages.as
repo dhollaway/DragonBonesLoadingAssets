@@ -32,7 +32,7 @@ public class LoadImages extends Sprite {
         this.addChild(background);
         trace("LoadImage class is now loaded!");
 
-        //Not able to DragonBones assets
+        //**************************Not able to DragonBones assets *******************************************
         //trace(Assets.assets.getObject("skeleton"));
         /*_playRobot = new PlayCharacter();
         _playRobot.x = 300;

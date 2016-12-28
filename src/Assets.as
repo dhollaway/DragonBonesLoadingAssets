@@ -24,7 +24,7 @@ public class Assets extends Sprite {
     }
 
     private function onAddedToStage(event:Event):void {
-        if(screenWidthDetermined == 960) {
+
             trace ("The screen size is: " + screenWidthDetermined);
             this.removeEventListener (Event.ADDED_TO_STAGE, onAddedToStage);
 
@@ -41,7 +41,7 @@ public class Assets extends Sprite {
                 }
             });
 
-        }
+
     }
 
     private function loadAssets():void

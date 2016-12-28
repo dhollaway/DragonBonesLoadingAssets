@@ -37,8 +37,8 @@
       <file leaf-file-name="Assets.as" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Assets.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+            <state relative-caret-position="189">
+              <caret line="37" column="64" selection-start-line="37" selection-start-column="64" selection-end-line="37" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -47,8 +47,8 @@
       <file leaf-file-name="LoadImages.as" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LoadImages.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-83">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="342">
+              <caret line="34" column="110" selection-start-line="34" selection-start-column="110" selection-end-line="34" selection-end-column="110" />
               <folding>
                 <element signature="e#179#210#0" expanded="true" />
               </folding>
@@ -59,8 +59,8 @@
       <file leaf-file-name="PlayCharacter.as" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PlayCharacter.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+            <state relative-caret-position="159">
+              <caret line="57" column="45" selection-start-line="55" selection-start-column="9" selection-end-line="57" selection-end-column="53" />
               <folding>
                 <element signature="e#58#103#0" expanded="true" />
               </folding>
@@ -85,9 +85,9 @@
         <option value="$PROJECT_DIR$/src/Game.as" />
         <option value="$PROJECT_DIR$/src/Main.as" />
         <option value="$PROJECT_DIR$/src/PlayRobot.as" />
-        <option value="$PROJECT_DIR$/src/LoadImages.as" />
         <option value="$PROJECT_DIR$/src/PlayCharacter.as" />
         <option value="$PROJECT_DIR$/src/Assets.as" />
+        <option value="$PROJECT_DIR$/src/LoadImages.as" />
       </list>
     </option>
   </component>
@@ -171,7 +171,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="out" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -726,12 +730,12 @@
       <option name="presentableId" value="Default" />
       <updated>1482957493547</updated>
       <workItem from="1482957494808" duration="529000" />
-      <workItem from="1482958068377" duration="4859000" />
+      <workItem from="1482958068377" duration="6480000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5388000" />
+    <option name="totallyTimeSpent" value="7009000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -858,16 +862,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PlayCharacter.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-          <folding>
-            <element signature="e#58#103#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Game.as">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-340">
@@ -876,18 +870,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/PlayCharacter.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="57" column="45" selection-start-line="55" selection-start-column="9" selection-end-line="57" selection-end-column="53" />
+          <folding>
+            <element signature="e#58#103#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Assets.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+        <state relative-caret-position="189">
+          <caret line="37" column="64" selection-start-line="37" selection-start-column="64" selection-end-line="37" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LoadImages.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-83">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="342">
+          <caret line="34" column="110" selection-start-line="34" selection-start-column="110" selection-end-line="34" selection-end-column="110" />
           <folding>
             <element signature="e#179#210#0" expanded="true" />
           </folding>

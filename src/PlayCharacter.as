@@ -27,8 +27,9 @@ public class PlayCharacter extends Sprite {
     private var factory:StarlingFactory = new StarlingFactory ();
 
     private var skeletonData:Object;
-    public static var textureData:Object;
-    public static var textureCharacter:Texture;
+    private var textureData:Object;
+    private var textureImage:Texture;
+
     private var appDir:File;
     private var assets:AssetManager;
 
@@ -43,8 +44,22 @@ public class PlayCharacter extends Sprite {
         drawScreen();
     }
 
-    /*private function onAddedToStage():void {
+   /* private function onAddedToStage():void {
 
+         this.removeEventListener (Event.ADDED_TO_STAGE, onAddedToStage);
+
+         assets.enqueue (appDir.resolvePath ("assets/"));
+         assets.loadQueue (function (ratio1:Number):void {
+         if (ratio1 == 1.0) {
+
+         //DragonBones data is here.
+         skeletonData = assets.getObject("skeleton");
+         textureData = assets.getObject("texture");
+         textureImage = assets.getTexture("texture");
+
+         drawScreen();
+     }
+     });
     }*/
 
 
@@ -52,7 +67,7 @@ public class PlayCharacter extends Sprite {
     private function drawScreen():void {
 
         var dbData:DragonBonesData = factory.parseDragonBonesData (skeletonData);
-        factory.parseTextureAtlasData (textureData, textureCharacter);
+        factory.parseTextureAtlasData (textureData, textureImage);
 
         if (dbData) {
 
