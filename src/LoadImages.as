@@ -12,7 +12,7 @@ import starling.utils.AssetManager;
 public class LoadImages extends Sprite {
 
     private var background:Image;
-    private var _playRobot:PlayCharacter;
+    private var _playCharacter:PlayCharacter;
 
     public function LoadImages() {
         this.addEventListener (starling.events.Event.ADDED_TO_STAGE, loadScreen);
@@ -34,10 +34,10 @@ public class LoadImages extends Sprite {
 
         //**************************Not able to DragonBones assets *******************************************
         //trace(Assets.assets.getObject("skeleton"));
-        /*_playRobot = new PlayCharacter();
-        _playRobot.x = 300;
-        _playRobot.y = 200;
-        addChild(_playRobot);*/
+        /*_playCharacter = new PlayCharacter();
+        _playCharacter.x = 300;
+        _playCharacter.y = 200;
+        addChild(_playCharacter);*/
 
 
     }
