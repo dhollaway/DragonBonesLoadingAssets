@@ -20,19 +20,19 @@ import dragonBones.starling.StarlingArmatureDisplay;
 import dragonBones.events.EventObject;
 
 
-public class PlayRobot extends Sprite {
+public class PlayCharacter extends Sprite {
 
 
     private var armatureDisplay:StarlingArmatureDisplay = null;
     private var factory:StarlingFactory = new StarlingFactory ();
 
     private var skeletonData:Object;
-    private var textureData:Object;
-    private var texture:Texture;
+    public static var textureData:Object;
+    public static var textureCharacter:Texture;
     private var appDir:File;
     private var assets:AssetManager;
 
-    public function PlayRobot() {
+    public function PlayCharacter() {
         this.addEventListener (starling.events.Event.ADDED_TO_STAGE, loadScreen);
     }
 
@@ -52,7 +52,7 @@ public class PlayRobot extends Sprite {
     private function drawScreen():void {
 
         var dbData:DragonBonesData = factory.parseDragonBonesData (skeletonData);
-        factory.parseTextureAtlasData (textureData, texture);
+        factory.parseTextureAtlasData (textureData, textureCharacter);
 
         if (dbData) {
 

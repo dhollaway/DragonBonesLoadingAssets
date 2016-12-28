@@ -12,7 +12,7 @@ import starling.utils.AssetManager;
 public class LoadImages extends Sprite {
 
     private var background:Image;
-    private var _playRobot:PlayRobot;
+    private var _playRobot:PlayCharacter;
 
     public function LoadImages() {
         this.addEventListener (starling.events.Event.ADDED_TO_STAGE, loadScreen);
@@ -30,10 +30,11 @@ public class LoadImages extends Sprite {
         //I'm able to add assets here.
         background = new Image(Assets.assets.getTexture("background"));
         this.addChild(background);
+        trace("LoadImage class is now loaded!");
 
         //Not able to DragonBones assets
         //trace(Assets.assets.getObject("skeleton"));
-        /*_playRobot = new PlayRobot();
+        /*_playRobot = new PlayCharacter();
         _playRobot.x = 300;
         _playRobot.y = 200;
         addChild(_playRobot);*/

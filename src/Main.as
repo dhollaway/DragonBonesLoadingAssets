@@ -14,14 +14,8 @@ import starling.core.Starling;
 
         public function Main()
         {
-
             _starling = new Starling(Assets, stage);
             _starling.start();
-
-
         }
-
-
-
    }
 }
