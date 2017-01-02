@@ -34,14 +34,20 @@ public class LoadImages extends Sprite {
 
         //**************************Not able to DragonBones assets *******************************************
         //trace(Assets.assets.getObject("skeleton"));
-        /*_playCharacter = new PlayCharacter();
+        _playCharacter = new PlayCharacter();
         _playCharacter.x = 300;
         _playCharacter.y = 200;
-        addChild(_playCharacter);*/
+        addChild(_playCharacter);
+        _playCharacter.addEventListener(Event.COMPLETE, doSomething)
 
 
     }
 
+
+    private function doSomething(e:Event)
+     {
+      trace("The animation is complete.");
+     }
 
 }
 

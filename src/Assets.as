@@ -15,9 +15,6 @@ public class Assets extends Sprite {
     private var appDir:File = File.applicationDirectory;
     private var screenWidthDetermined:int = Starling.current.nativeStage.stageWidth;
     private var loadImageClass:LoadImages;
-    private var skeletonData:Object;
-    private var textureData:Object;
-    private var textureImage:Texture;
 
     public function Assets() {
         this.addEventListener (Event.ADDED_TO_STAGE, onAddedToStage);
@@ -31,13 +28,7 @@ public class Assets extends Sprite {
             assets.enqueue (appDir.resolvePath ("assets/"));
             assets.loadQueue (function (ratio1:Number):void {
                 if (ratio1 == 1.0) {
-
-                    //DragonBones data is here.
-                    skeletonData = assets.getObject("skeleton");
-                    textureData = assets.getObject("texture");
-                    textureImage = assets.getTexture("texture");
-
-                    loadAssets ();
+                loadAssets ();
                 }
             });
 
@@ -50,6 +41,7 @@ public class Assets extends Sprite {
         addChild(loadImageClass);
         trace(loadImageClass);
     }
+
 
 }
 

@@ -2,6 +2,7 @@ package {
 
 //This class creates the dragon bones assets.
 
+import dragonBones.objects.EventData;
 import dragonBones.textures.TextureAtlasData;
 
 import starling.core.Starling;
@@ -26,10 +27,11 @@ public class PlayCharacter extends Sprite {
     private var armatureDisplay:StarlingArmatureDisplay = null;
     private var factory:StarlingFactory = new StarlingFactory ();
 
-    private var skeletonData:Object;
-    private var textureData:Object;
-    private var textureImage:Texture;
+    private var skeletonData:Object = Assets.assets.getObject("skeleton")
+    private var textureData:Object = Assets.assets.getObject("texture");
+    private var textureImage:Texture = Assets.assets.getTexture("texture");
 
+    private var  dbData:DragonBonesData;
     private var appDir:File;
     private var assets:AssetManager;
 
@@ -64,9 +66,10 @@ public class PlayCharacter extends Sprite {
 
 
     //Draws the assets onto the screen.
-    private function drawScreen():void {
+    private function drawScreen():void
+    {
 
-        var dbData:DragonBonesData = factory.parseDragonBonesData (skeletonData);
+        dbData = factory.parseDragonBonesData (skeletonData);
         factory.parseTextureAtlasData (textureData, textureImage);
 
         if (dbData) {
@@ -81,9 +84,14 @@ public class PlayCharacter extends Sprite {
         //armatureDisplay.animation.play ();
 
         //plays named the animation in a loop
-        //armatureDisplay.animation.play ("dancing",0);
-        armatureDisplay.animation.play ("idle", 0);
+        armatureDisplay.animation.play ("idle", 1);
+        //armatureDisplay.addEventListener (Event.COMPLETE, finishedAnimation);
+    }
+    private function finishedAnimation(e:Event):void
+    {
 
+
+        
     }
 
 

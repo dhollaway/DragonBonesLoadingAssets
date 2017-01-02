@@ -16,6 +16,7 @@ import starling.core.Starling;
         {
             _starling = new Starling(Assets, stage);
             _starling.start();
+            _starling.showStats = true;
         }
    }
 }
